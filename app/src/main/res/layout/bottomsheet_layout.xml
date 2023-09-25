@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/botomsheet_container"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/size_20"
+        android:paddingBottom="@dimen/size_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/otp_verification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_18"
+            tools:ignore="SpUsage" />
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otpTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            app:bar_enabled="true"
+            app:bar_height="2dp"
+            app:height="40dp"
+            app:length="4"
+            app:otp=""
+            app:otp_box_background="@drawable/otp_background"
+            app:otp_text_size="24dp"
+            app:width="40dp" />
+
+        <Button
+            android:id="@+id/btn_otp_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/size_30"
+            android:background="@drawable/button_white"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/submit"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/size_14"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/txt_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_20"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="00:60 seconds"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_12"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:id="@+id/lv_resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="@string/didn_t_receive_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/tvSheetResendCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="@string/resend_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

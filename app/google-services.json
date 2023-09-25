@@ -1,0 +1,142 @@
+{
+  "project_info": {
+    "project_number": "696925121232",
+    "project_id": "lisners",
+    "storage_bucket": "lisners.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696925121232:android:e20b7ed9dc3acbb8df4cd5",
+        "android_client_info": {
+          "package_name": "com.lisners"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696925121232-op9403erht4q35ah3aooo84bjkbkvbf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lisners",
+            "certificate_hash": "3f59375f9bc903195873dce37e2a5c8e54462f77"
+          }
+        },
+        {
+          "client_id": "696925121232-vdcaftgmja6d5id1856985231v4gdg8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAC1jTjXzE874m76Azhwxr82eIYWoMQYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696925121232-vdcaftgmja6d5id1856985231v4gdg8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696925121232:android:d0dbd2b36b417fbedf4cd5",
+        "android_client_info": {
+          "package_name": "com.lisners.counsellor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696925121232-vdcaftgmja6d5id1856985231v4gdg8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAC1jTjXzE874m76Azhwxr82eIYWoMQYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696925121232-vdcaftgmja6d5id1856985231v4gdg8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696925121232:android:ecca6b7d747a21a6df4cd5",
+        "android_client_info": {
+          "package_name": "com.lisners.patient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696925121232-vdcaftgmja6d5id1856985231v4gdg8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAC1jTjXzE874m76Azhwxr82eIYWoMQYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696925121232-vdcaftgmja6d5id1856985231v4gdg8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696925121232:android:e7baf6939160ba39df4cd5",
+        "android_client_info": {
+          "package_name": "com.listnerpatient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696925121232-16ev8u2ufsfhkemcb8cfn3a4sc158psf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.listnerpatient",
+            "certificate_hash": "3f59375f9bc903195873dce37e2a5c8e54462f77"
+          }
+        },
+        {
+          "client_id": "696925121232-vdcaftgmja6d5id1856985231v4gdg8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAC1jTjXzE874m76Azhwxr82eIYWoMQYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696925121232-vdcaftgmja6d5id1856985231v4gdg8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

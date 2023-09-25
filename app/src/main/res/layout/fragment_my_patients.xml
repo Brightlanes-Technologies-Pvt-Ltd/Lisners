@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.Home.AvailabilityStack.MyPatientsFragment">
+
+    <include layout="@layout/round_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_primary"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/size_20"
+                android:paddingHorizontal="@dimen/size_20"
+                android:paddingVertical="@dimen/size_12">
+
+                <EditText
+                    android:id="@+id/etHeaderSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_less_round_primary_background"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_vertical"
+                    android:hint="Search Patient"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/grey"
+
+                    android:layout_marginLeft="@dimen/size_5"
+
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_16" />
+
+                <ImageButton
+                    android:id="@+id/ib_search"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:background="@drawable/ic_svg_magnifier" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_no_result"
+                android:visibility="gone"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="No Appointment"
+                android:layout_margin="@dimen/size_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_pending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

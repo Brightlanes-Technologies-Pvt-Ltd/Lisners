@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_grey_transparent">
+
+        <FrameLayout
+            android:id="@+id/remote_preview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/local_preview_layout"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Connecting to patient"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/local_preview_layout"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_layout"
+            android:layout_marginBottom="@dimen/size_5"
+            android:fontFamily="@font/poppins_medium"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:padding="@dimen/size_15"
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <!-- <androidx.appcompat.widget.AppCompatImageView
+                 android:id="@+id/btn_endcall"
+                 android:layout_width="82dp"
+                 android:layout_height="82dp"
+                 android:layout_centerInParent="true"
+                 android:visibility="gone"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/btn_endcall" />-->
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_mute"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_audio" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_speaker"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_switch_speaker" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_switch_camera"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_switch_camera" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_toStartOf="@id/local_preview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/size_50"
+                android:layout_height="@dimen/size_50"
+                android:background="@drawable/button_light_primary">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+
+                    />
+
+                <TextView
+                    android:id="@+id/iv_image_char"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_20" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_5"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="TITLE"
+                android:textColor="@color/primary"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

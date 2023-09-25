@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.Home.HomeStack.HomeFragment">
+
+    <include layout="@layout/round_header" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_15">
+
+            <TextView
+                android:visibility="gone"
+                android:padding="@dimen/size_4"
+                android:id="@+id/tv_account_approved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text=""
+
+                android:textColor="@color/red"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/size_15"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="@string/msg_home_top"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+            <include layout="@layout/home_menu_current_balance" />
+
+            <include layout="@layout/home_memu_total_patients" />
+
+            <include layout="@layout/home_memu_upcoming_appintment" />
+
+            <include layout="@layout/home_memu_total_revirew" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/size_15"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Upcoming Appointments"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_16" />
+
+            <TextView
+                android:id="@+id/tv_no_result"
+                android:visibility="gone"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="No Appointment"
+                android:layout_margin="@dimen/size_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ProgressBar
+                android:id="@+id/pb_loader"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_20"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

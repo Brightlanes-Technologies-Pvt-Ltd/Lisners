@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60"
+        android:layout_marginVertical="@dimen/size_5"
+        android:layout_marginEnd="@dimen/size_2"
+        android:layout_toEndOf="@+id/v_image"
+        android:background="@drawable/border_round_card_background"
+        app:cardCornerRadius="@dimen/size_5"
+        tools:ignore="UnknownIdInLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_round_card_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:padding="@dimen/size_6"
+                android:paddingHorizontal="@dimen/size_20">
+
+                <TextView
+                    android:id="@+id/tv_date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text=""
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:text=" "
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/size_10"
+                    tools:ignore="SpUsage" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="₹ "
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/size_16"
+                    tools:ignore="NestedWeights,SpUsage" />
+
+                <!--<View
+                    android:layout_width="@dimen/size_5"
+                    android:layout_height="@dimen/size_18"
+                    android:layout_marginEnd="@dimen/size_10"
+                    android:background="@drawable/ic_svg_menu_icon" />
+-->
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

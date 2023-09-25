@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/bg_video_container"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout
+            android:id="@+id/floating_video_container"
+            android:layout_width="108dp"
+            android:layout_height="192dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.936"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.821" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_100"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="@dimen/size_15">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="@dimen/size_50"
+                android:layout_height="@dimen/size_50"
+                android:background="@drawable/button_light_primary" />
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="TITLE"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_20" />
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/pb_call_loader"
+            style="?android:attr/progressBarStyleSmall"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_100"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_marginBottom="@dimen/size_5"
+                android:text="0.00"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/audioBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="20"
+                    android:onClick="onAudioMuteClicked"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/audio_toggle_btn" />
+
+                <ImageView
+                    android:id="@+id/leaveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:onClick="onLeaveChannelClicked"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/end_call" />
+
+                <ImageView
+                    android:id="@+id/videoBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:onClick="onVideoMuteClicked"
+                    android:layout_weight="20"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/video_toggle_btn" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

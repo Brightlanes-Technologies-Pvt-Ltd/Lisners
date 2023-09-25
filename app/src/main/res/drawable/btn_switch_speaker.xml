@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true" android:drawable="@drawable/icons_speaker_no_audio" />
+    <item android:drawable="@drawable/icon_speker_audio" />
+</selector>

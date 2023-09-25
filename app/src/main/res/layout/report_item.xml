@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/size_5"
+        android:layout_marginEnd="@dimen/size_2"
+        android:layout_toEndOf="@+id/v_image"
+        android:background="@drawable/border_round_card_background"
+        app:cardCornerRadius="@dimen/size_5"
+        tools:ignore="UnknownIdInLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_round_card_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text=" "
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/size_12"
+                        tools:ignore="SpUsage" />
+
+
+                    <LinearLayout
+                        android:id="@+id/price_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_phone_icon"
+                            android:background="@drawable/border_circle_primary_background"
+                            android:layout_width="@dimen/size_15"
+                            android:layout_height="@dimen/size_15"
+                            android:padding="@dimen/size_4"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvPrice"
+                            android:maxWidth="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5"
+                            android:fontFamily="@font/poppins_medium"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/size_10"
+                            tools:ignore="SpUsage" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_spacilization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_semi_round_primary_background"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="@dimen/size_10"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_10"
+                    tools:ignore="NestedWeights,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tv_date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_10"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/tv_sec_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_8"
+                    tools:ignore="SpUsage" />
+
+            </LinearLayout>
+
+            <!--<View
+                android:layout_width="@dimen/size_5"
+                android:layout_height="@dimen/size_18"
+                android:layout_marginHorizontal="@dimen/size_10"
+                android:background="@drawable/ic_svg_menu_icon" />-->
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

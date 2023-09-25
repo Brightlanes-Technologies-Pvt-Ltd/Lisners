@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+  <LinearLayout
+      android:orientation="horizontal"
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+<!--      <ImageView-->
+<!--          android:id="@+id/iv_image"-->
+<!--          android:layout_marginRight="@dimen/size_7"-->
+<!--          android:layout_width="@dimen/size_70"-->
+<!--          android:layout_height="@dimen/size_70"/>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/size_10">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/size_10"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:text="title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_12"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/size_5"
+            android:fontFamily="@font/poppins_regular"
+            android:includeFontPadding="false"
+            android:text="description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_10"
+            tools:ignore="SpUsage" />
+
+    </RelativeLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+      <TextView
+          android:id="@+id/tv_date"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/size_10"
+          android:fontFamily="@font/poppins_medium"
+          android:layout_marginRight="@dimen/size_5"
+          android:includeFontPadding="false"
+          android:text="date"
+          android:textColor="@color/black"
+          android:textSize="@dimen/size_10"
+          tools:ignore="SpUsage" />
+
+</LinearLayout>
+  </LinearLayout>
+    <include layout="@layout/single_line" />
+</LinearLayout>

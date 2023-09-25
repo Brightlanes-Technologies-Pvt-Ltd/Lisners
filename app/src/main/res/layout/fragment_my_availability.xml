@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.Home.AvailabilityStack.MyAvailabilityFragment">
+
+    <include layout="@layout/round_header" />
+
+    <androidx.core.widget.NestedScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Day"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14" />
+
+            <LinearLayout
+                android:id="@+id/lv_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_grey_transparent"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/size_15"
+                android:paddingVertical="@dimen/size_10" >
+
+                <TextView
+                    android:id="@+id/tv_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Select Day"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/size_14" />
+
+                <ProgressBar
+                    android:id="@+id/pb_day"
+                    android:visibility="gone"
+                    android:background="@drawable/border_circle_primary_background"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"/>
+
+                  <ImageView
+                      android:id="@+id/iv_day_arrow"
+                    android:layout_width="@dimen/size_10"
+                    android:layout_height="@dimen/size_10"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/dropdown" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/size_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Start Time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14" />
+
+            <LinearLayout
+                android:id="@+id/lv_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_grey_transparent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/size_20"
+
+                android:paddingHorizontal="@dimen/size_15"
+                android:paddingVertical="@dimen/size_10" >
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Select start time"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/size_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_15"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_calendar_clock" />
+            </LinearLayout>
+
+            <!--<TextView
+                android:layout_marginTop="@dimen/size_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="End Time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14" />
+
+            <LinearLayout
+                android:id="@+id/lv_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_20"
+                android:background="@drawable/btn_grey_transparent"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/size_15"
+                android:paddingVertical="@dimen/size_10" >
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Select end time"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/size_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_15"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_calendar_clock" />
+            </LinearLayout>-->
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="SAVE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/size_20"
+                android:id="@+id/rv_available_list"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_svg_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_svg_wallet_empty"
+            android:title="My Wallet" />
+        <item
+            android:id="@+id/nav_appointments"
+            android:icon="@drawable/ic_svg_appointments"
+            android:title="My Appointments" />
+        <item
+            android:id="@+id/nav_patients"
+            android:icon="@drawable/ic_svg_patient"
+            android:title="My Patients" />
+        <item
+            android:id="@+id/nav_set_availability"
+            android:icon="@drawable/ic_svg_availability"
+            android:title="My Availability" />
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/ic_svg_report"
+            android:title="Reports" />
+        <item
+            android:id="@+id/nav_noti"
+            android:icon="@drawable/ic_svg_notification"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_svg_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_svg_setting"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_svg_logout"
+            android:title="Logout" />
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_faq"
+                android:icon="@drawable/ic_svg_faq"
+                android:title="Faq" />
+            <item
+                android:id="@+id/nav_term_condition"
+                android:icon="@drawable/ic_svg_terms_con"
+                android:title="Terms &amp; Conditions" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_svg_privacy_policy"
+                android:title="Contact" />
+
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_svg_privacy_policy"
+                android:title="About us" />
+        </menu>
+    </item>
+</menu>

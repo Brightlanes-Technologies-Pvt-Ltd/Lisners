@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.Auth.MyChargesActivity"
+
+    >
+
+    <include layout="@layout/round_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/size_15"
+        android:paddingVertical="@dimen/size_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginVertical="@dimen/size_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Set Voice/Video call rates"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/size_2"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Session time is 30 min"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_10"
+                tools:ignore="SpUsage" />
+            <!--
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="8dp"
+                                android:background="@drawable/ic_svg_arrow_down_primary" />
+            -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_grey_transparent"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/size_10"
+            android:paddingVertical="@dimen/size_15">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_8"
+                android:background="@drawable/border_less_round_primary_background"
+                android:padding="@dimen/size_6">
+
+                <View
+                    android:layout_width="@dimen/size_16"
+                    android:layout_height="@dimen/size_16"
+                    android:background="@drawable/ic_svg_phone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Voice Call"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_12"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="₹"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/size_12"
+                    tools:ignore="SpUsage" />
+
+                <EditText
+                    android:id="@+id/edit_voice_call_rate"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size_5"
+                    android:background="@drawable/border_less_round_primary_background"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="phone"
+                    android:paddingHorizontal="@dimen/size_2"
+                    android:paddingVertical="@dimen/size_2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_12"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="/ session"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/size_12"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/size_15"
+            android:background="@drawable/btn_grey_transparent"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/size_10"
+            android:paddingVertical="@dimen/size_15">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_8"
+                android:background="@drawable/border_less_round_primary_background"
+                android:padding="@dimen/size_6">
+
+                <View
+                    android:layout_width="@dimen/size_18"
+                    android:layout_height="@dimen/size_16"
+                    android:background="@drawable/ic_svg_video_camera" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Video Call"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_12"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="₹"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/size_12"
+                    tools:ignore="SpUsage" />
+
+                <EditText
+                    android:id="@+id/edit_video_call_rate"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size_5"
+                    android:background="@drawable/border_less_round_primary_background"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="phone"
+                    android:paddingHorizontal="@dimen/size_2"
+                    android:paddingVertical="@dimen/size_2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_12"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="/ session"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/size_12"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_15"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:text="Preferred Language"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/size_14"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/size_2"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:text="(You can select more than one language)"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/size_10"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/btn_grey_transparent"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/size_15"
+            android:paddingVertical="@dimen/size_15">
+
+            <EditText
+                android:id="@+id/edit_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:focusableInTouchMode="false"
+                android:includeFontPadding="false"
+                android:hint="Select Language"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                tools:ignore="SpUsage" />
+<!--            <Spinner-->
+<!--                android:id="@+id/spn_my_chargers"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1" />-->
+
+            <View
+                android:layout_width="@dimen/size_12"
+                android:layout_height="@dimen/size_10"
+                android:background="@drawable/ic_svg_arrow_down" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_15"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:text="About Info"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/size_14"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/size_10">
+
+            <EditText
+                android:id="@+id/edit_des"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_100"
+                android:layout_weight="1"
+                android:background="@drawable/border_round_card_background"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="top"
+                android:hint="Enter Info"
+                android:includeFontPadding="false"
+                android:padding="@dimen/size_10"
+                android:text=""
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_10"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="@dimen/size_200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size_30"
+            android:background="@drawable/button_primary"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16"
+            tools:ignore="SpUsage" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/header_bottom_round"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/size_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_header_left"
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:background="@color/primary" />
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16"
+            tools:ignore="SpUsage" />
+
+        <ImageButton
+            android:id="@+id/btn_header_right"
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:background="@color/primary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_walletHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_wallet_totalBal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/size_2">
+
+            <TextView
+                android:id="@+id/tvWallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Total Wallet Balance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                tools:ignore="RtlSymmetry,SpUsage" />
+
+            <LinearLayout
+                android:id="@+id/lv_withdraw_history"
+                android:layout_width="@dimen/size_160"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|start">
+
+                <ImageButton
+                    android:layout_width="@dimen/size_25"
+                    android:layout_height="@dimen/size_25"
+                    android:background="@drawable/circle_icon_background"
+                    android:src="@drawable/ic_svg_withdraw"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tvWalletText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:paddingStart="@dimen/size_10"
+                    android:text="Withdraw Money"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="RtlSymmetry,SpUsage" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wallet_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvWalletMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:includeFontPadding="false"
+                android:text="₹ 0.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                tools:ignore="RtlSymmetry,SpUsage" />
+
+            <LinearLayout
+                android:id="@+id/lv_add_wallet"
+                android:layout_width="@dimen/size_160"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|start">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_icon_background"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/size_6"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_20"
+                    tools:ignore="ContentDescription,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tvWalletTextHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:paddingStart="@dimen/size_10"
+                    android:text="Add Money"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="RtlSymmetry,SpUsage" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_withdrawMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start">
+
+            <View
+                android:layout_width="@dimen/size_18"
+                android:layout_height="@dimen/size_18"
+                android:background="@drawable/ic_svg_wallet_empty" />
+
+            <TextView
+                android:id="@+id/tvWallet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:paddingStart="@dimen/size_10"
+                android:text="Wallet Balance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                tools:ignore="RtlSymmetry,SpUsage" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvWalletMoney2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:includeFontPadding="false"
+            android:text="₹"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14"
+            tools:ignore="RtlSymmetry,SpUsage" />
+
+
+    </LinearLayout>
+</LinearLayout>

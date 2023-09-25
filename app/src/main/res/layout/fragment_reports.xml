@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.Home.HomeStack.ReportsFragment">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/round_header" />
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginHorizontal="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lv_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size_5"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Start Date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_grey_transparent"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/size_15"
+                android:paddingVertical="@dimen/size_6">
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Select Day"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="SpUsage" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_10"
+                    android:layout_height="@dimen/size_10"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_svg_blue_appointment"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size_5"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="End Date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_grey_transparent"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/size_15"
+                android:paddingVertical="@dimen/size_6">
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Select Day"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="SpUsage" />
+
+                <ImageView
+                    android:layout_width="@dimen/size_10"
+                    android:layout_height="@dimen/size_10"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_svg_blue_appointment"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="@dimen/size_35"
+            android:layout_height="@dimen/size_35"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/size_10"
+            android:background="@drawable/btn_transparent_primary"
+            android:src="@drawable/search_bar"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_header"
+        android:orientation="vertical"
+        android:padding="@dimen/size_15">
+
+<!--        <include layout="@layout/report_item" />-->
+        <TextView
+            android:id="@+id/tv_no_result"
+            android:visibility="gone"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="No Appointment"
+            android:layout_margin="@dimen/size_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/size_10"
+        android:layout_marginVertical="@dimen/size_30"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_primary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/size_15"
+            android:paddingVertical="@dimen/size_10">
+
+            <LinearLayout
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40"
+                android:background="@drawable/border_circle_red_background"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="@dimen/size_25"
+                    android:layout_height="@dimen/size_25"
+                    android:background="@drawable/ic_svg_file" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="@dimen/size_10"
+                android:text="Download Report"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+            <View
+                android:layout_width="@dimen/size_26"
+                android:layout_height="@dimen/size_22"
+                android:background="@drawable/ic_svg_download" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

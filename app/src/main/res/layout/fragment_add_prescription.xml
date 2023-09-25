@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Activity.Home.AvailabilityStack.AddPrescriptionFragment">
+
+    <include layout="@layout/round_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingHorizontal="@dimen/size_15"
+                android:paddingVertical="@dimen/size_10">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:elevation="@dimen/size_4">
+
+                    <ImageView
+                        android:id="@+id/p_image"
+                        android:layout_width="@dimen/size_90"
+                        android:layout_height="@dimen/size_90"
+                        android:src="@drawable/btn_transparent_primary"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_short_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="AS"
+                        android:layout_centerInParent="true"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/size_30"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/size_10"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/size_10"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:includeFontPadding="false"
+                            android:text=" "
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/size_14"
+                            tools:ignore="SpUsage" />
+
+                        <TextView
+                            android:id="@+id/tv_spacilization"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/size_5"
+                            android:background="@drawable/btn_grey_transparent"
+                            android:fontFamily="@font/poppins_medium"
+                            android:includeFontPadding="false"
+                            android:padding="@dimen/size_5"
+                            android:paddingHorizontal="@dimen/size_5"
+                            android:text=" "
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/size_10"
+                            tools:ignore="SpUsage" />
+
+                        <TextView
+                            android:id="@+id/tv_date_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:includeFontPadding="false"
+                            android:text="PM"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/size_14"
+                            tools:ignore="SpUsage" />
+
+                        <TextView
+                            android:id="@+id/tv_sec_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="50 sec"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/size_10"
+                            tools:ignore="SpUsage" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/size_5">
+
+
+                        <ImageButton
+                            android:id="@+id/iv_phone_icon"
+                            android:layout_width="@dimen/size_22"
+                            android:layout_height="@dimen/size_22"
+                            android:layout_marginBottom="@dimen/size_5"
+                            android:background="@drawable/border_circle_primary_background"
+                            tools:ignore="ContentDescription" />
+
+                        <!--<ImageButton
+                            android:layout_width="@dimen/size_22"
+                            android:layout_height="@dimen/size_22"
+                            android:layout_marginTop="@dimen/size_5"
+                            android:background="@drawable/border_circle_primary_background"
+                            android:src="@drawable/ic_svg_video_camera"
+                            tools:ignore="ContentDescription" />-->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="@dimen/size_15"
+                android:text=""
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_16"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_15"
+                android:layout_marginVertical="@dimen/size_10"
+                android:background="@drawable/border_round_card_background"
+                android:padding="@dimen/size_10">
+
+                <TextView
+                    android:id="@+id/tv_parsley_notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/size_10"
+                    tools:ignore="SpUsage" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="@dimen/size_15"
+                android:text="Your Prescription"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_16"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_15"
+                android:layout_marginVertical="@dimen/size_10">
+
+                <EditText
+                    android:id="@+id/edit_prescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_round_card_background"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="top"
+                    android:hint="Add Prescription"
+                    android:includeFontPadding="false"
+                    android:minLines="5"
+                    android:padding="@dimen/size_10"
+                    android:text=""
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/size_10"
+                    tools:ignore="SpUsage" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_15"
+                android:layout_marginTop="@dimen/size_30"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Save Prescription"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

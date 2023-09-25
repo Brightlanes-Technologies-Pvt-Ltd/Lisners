@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="agora_access_token">45544326ab624553823873a7f4bb2c21</string>
+
+
+    <string name="app_name">Lisners Therapist</string>
+    <string name="splash_text">Mental health\n&amp; Wellbeing</string>
+
+    <string name="default_notification_channel_id">Lisners</string>
+
+    <string name="slide_1_title">Mental health matters</string>
+    <string name="slide_1_desc">Mental health is more important than physical health.</string>
+
+    <string name="slide_2_title">Talk to a therapist in 60 seconds.</string>
+    <string name="slide_2_desc">Find and connect with the best therapists in 60 seconds.</string>
+
+    <string name="slide_3_title">Anonymous and confidential</string>
+    <string name="slide_3_desc">Talk to a therapist without sharing your number. Sessions are anonymous and confidential.</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="create_an_account">CREATE AN ACCOUNT</string>
+    <string name="sign_in_underlined"><u>Login</u></string>
+    <string name="sign_up_underlined"><u>Create an account</u></string>
+
+    <string name="submit">Submit</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="hintPhone">Mobile Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_policy"></string>
+
+    <string name="re_type_password">Re-type password</string>
+    <string name="confirm_password">Confirm Password*</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="new_password">New password</string>
+    <string name="old_password">Old password</string>
+    <string name="enter_old_password">Enter old password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="re_type_new_password">Re-type new password</string>
+    <string name="enter_your_address">Enter your address</string>
+    <string name="address">Address*</string>
+    <string name="select_specialist">Select Specialist</string>
+    <string name="specialization">Specialization*</string>
+    <string name="enter_city">Enter city</string>
+    <string name="city">City*</string>
+    <string name="enter_your_email_id">Enter your email id</string>
+    <string name="email_address">Email Address*</string>
+    <string name="enter_clinic_name">Enter clinic name</string>
+    <string name="clinic_name">Clinic Name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="first_name">Full Name*</string>
+    <string name="resend_code"><u>Resend Code</u></string>
+    <string name="didn_t_receive_code">Didn’t receive code?&#160;</string>
+    <string name="msg_home_top">A quick look back at your journey so far</string>
+    <string name="change_password">Change Password</string>
+    <string name="replace_the_password_with_the_new_one">Replace the password with the new one</string>
+    <string name="update">Update</string>
+    <string name="mental_health_amp_wellbeing"><![CDATA[Mental health & wellbeing]]></string>
+
+
+</resources>

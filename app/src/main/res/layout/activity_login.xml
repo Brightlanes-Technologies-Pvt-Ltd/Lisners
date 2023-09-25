@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/round_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/size_20">
+
+        <ImageView
+            android:id="@+id/signInScreen"
+            android:layout_width="@dimen/size_190"
+            android:layout_height="@dimen/size_190"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lisners_logo" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size_5"
+            android:text="@string/mental_health_amp_wellbeing"
+            android:textColor="#024A7A"
+            android:textSize="@dimen/size_12"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/size_20"
+            android:textSize="@dimen/size_14"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/mobile_number"
+            android:textColor="@color/black"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/edit_login_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4"
+            android:background="@drawable/btn_grey_transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/hintPhone"
+            android:inputType="phone"
+            android:padding="@dimen/size_10"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/size_14"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/size_20"
+            android:textSize="@dimen/size_14"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/password"
+            android:textColor="@color/black"
+            tools:ignore="SpUsage" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_login_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:textColorHint="@color/grey"
+            app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/edit_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4"
+            android:background="@drawable/btn_grey_transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="@dimen/size_10"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/size_14"
+            tools:ignore="SpUsage" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:textSize="@dimen/size_14"
+            android:text="@string/forgot_password"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            tools:ignore="SpUsage" />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_30"
+            android:layout_marginBottom="@dimen/size_10"
+            android:background="@drawable/button_primary"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+                android:textSize="@dimen/size_14"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Don’t Have an Account? "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/tvSignInSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/sign_up_underlined"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

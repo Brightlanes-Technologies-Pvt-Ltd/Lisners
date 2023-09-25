@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/menu_action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_svg_home"
+        android:iconTint="@color/white"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        tools:ignore="UnusedAttribute" />
+    <item
+        android:id="@+id/menu_action_appointment"
+        android:enabled="true"
+        android:icon="@drawable/ic_svg_appointments"
+        android:iconTint="@color/white"
+        android:title="Appointment"
+        app:showAsAction="ifRoom"
+        tools:ignore="UnusedAttribute" />
+    <item
+        android:id="@+id/menu_action_availability"
+        android:enabled="true"
+        android:icon="@drawable/ic_svg_availability"
+        android:iconTint="@color/white"
+        android:title="Availability"
+        app:showAsAction="ifRoom"
+        tools:ignore="UnusedAttribute" />
+    <item
+        android:id="@+id/menu_action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_svg_profile"
+        android:iconTint="@color/white"
+        android:title="Profile"
+        app:showAsAction="ifRoom"
+        tools:ignore="UnusedAttribute" />
+</menu>

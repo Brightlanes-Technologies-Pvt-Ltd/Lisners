@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_total_patient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_15"
+    android:background="@drawable/ic_svg_card_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/size_15">
+
+    <ImageView
+        android:layout_width="@dimen/size_23"
+        android:layout_height="@dimen/size_23"
+        android:layout_marginRight="@dimen/size_20"
+        android:src="@drawable/ic_svg_depressed" />
+
+    <TextView
+        android:id="@+id/tv_patients"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/size_16" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/size_10"
+        android:background="@color/grey_transparent2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:text="Total Patient"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_12" />
+</LinearLayout>

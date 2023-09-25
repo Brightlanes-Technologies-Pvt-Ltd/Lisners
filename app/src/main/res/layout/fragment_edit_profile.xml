@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Activity.Home.ProfileStack.EditProfileFragment">
+
+    <include layout="@layout/round_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_pic_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_30"
+                android:layout_marginBottom="@dimen/size_20">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="@dimen/size_120"
+                    android:layout_height="@dimen/size_120"
+                    android:layout_gravity="center|center_horizontal"
+                    android:background="@drawable/border_round"
+                    android:padding="@dimen/size_5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/profile_large"
+                    tools:ignore="ContentDescription" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_90"
+                    android:layout_marginTop="@dimen/size_90"
+                    android:background="@drawable/border_circle_primary_background"
+                    android:gravity="center"
+                    android:padding="@dimen/size_10">
+
+                    <ImageView
+                        android:id="@+id/iv_edit_profile"
+                        android:layout_width="@dimen/size_18"
+                        android:layout_height="@dimen/size_18"
+                        android:src="@drawable/ic_svg_pencil"
+                        tools:ignore="ContentDescription" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Ellianor Rodrigues"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size_20"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/tv_profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/app_grey"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/np_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_10">
+
+                <EditText
+                    android:id="@+id/edit_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Full Name"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="Autofill,SpUsage,TextFields" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+           <!-- <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/np_clinic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_10">
+
+                <EditText
+                    android:id="@+id/edit_clinic_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Clinic name(Optional)"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="Autofill,SpUsage,TextFields" />
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/np_email_eddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_10">
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Email Address"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="Autofill,SpUsage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/np_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_10">
+
+                <EditText
+                    android:id="@+id/edit_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="City"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="Autofill,SpUsage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/size_10"
+                android:paddingTop="@dimen/size_10"
+                android:paddingBottom="@dimen/size_5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Gender"
+                    android:textColor="@color/grey_transparent2"
+                    android:textSize="@dimen/size_12"
+                    tools:ignore="SpUsage" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        android:id="@+id/rgOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Female" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/size_10"
+                android:paddingTop="@dimen/size_10"
+                android:paddingBottom="@dimen/size_5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Specilization"
+                    android:textColor="@color/grey_transparent2"
+                    android:textSize="@dimen/size_12"
+                    tools:ignore="SpUsage" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_50"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_spacilization"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_add_sp"
+                        android:layout_width="@dimen/size_25"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size_10"
+                        android:background="@drawable/border_circle_primary_background"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:includeFontPadding="false"
+                        android:text=" + "
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_25"
+                        tools:ignore="SpUsage" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_text_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/red" />
+
+                <include layout="@layout/single_line" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/np_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_10">
+
+                <EditText
+                    android:id="@+id/edit_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Address"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_14"
+                    tools:ignore="Autofill,SpUsage,TextFields" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_update_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_10"
+                android:layout_marginVertical="@dimen/size_30"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:paddingVertical="@dimen/size_10"
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

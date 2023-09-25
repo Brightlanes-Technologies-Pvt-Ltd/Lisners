@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.Home.HomeStack.WithdrawMoneyFragment">
+
+    <include layout="@layout/round_detailed_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/size_15"
+            android:paddingVertical="@dimen/size_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/size_10"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+            <EditText
+                android:id="@+id/edit_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_grey_transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter amount"
+                android:inputType="number"
+
+                android:padding="@dimen/size_10"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/size_14"
+                tools:ignore="Autofill,SpUsage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Bank Detalis"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/size_10"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Account Holder Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+            <EditText
+                android:id="@+id/edit_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_grey_transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter your name"
+                android:padding="@dimen/size_10"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/size_14"
+                tools:ignore="Autofill,SpUsage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/size_20"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Account Number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+
+            <EditText
+                android:id="@+id/edit_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_4"
+                android:background="@drawable/btn_grey_transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter account number"
+                android:padding="@dimen/size_10"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/size_20"
+                android:fontFamily="@font/poppins_regular"
+                android:text="IFSC Code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage,Autofill" />
+
+            <EditText
+                android:id="@+id/edit_ifsc_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_grey_transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter IFSC Code"
+                android:padding="@dimen/size_10"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/size_14"
+                tools:ignore="Autofill,SpUsage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/size_20"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Bank Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14"
+                tools:ignore="SpUsage,Autofill" />
+
+            <EditText
+                android:id="@+id/edit_back_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_grey_transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter Back Name"
+                android:padding="@dimen/size_10"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/size_14"
+                tools:ignore="Autofill,SpUsage" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_40"
+                android:layout_marginBottom="@dimen/size_10"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:includeFontPadding="false"
+                android:padding="@dimen/size_5"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
